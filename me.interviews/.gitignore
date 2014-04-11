@@ -1,4 +1,4 @@
-bin/*
-obj/*
+**/bin/*
+**/obj/*
 me.interviews.v12.suo
 me.interviews.sln
