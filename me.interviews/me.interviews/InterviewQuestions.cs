@@ -28,7 +28,11 @@ N=2 : 11,17,68
 N=3 : 10, 15, 100
 here if 16, 17, 15 are chosen.. we get the minimum difference as 17-15=2.
 	 */
-	
+
+        public void SubtractMinAndMax()
+        {
+            throw new NotImplementedException();
+        }	
 	
 	
 	
@@ -43,30 +47,30 @@ I found this question in a blog but I couldn't understand the answer. The answer
 最大堆：根结点的键值是所有堆结点键值中最大者的堆。
 最小堆：根结点的键值是所有堆结点键值中最小者的堆。
 	 */
-	
-	
-	
+
+
+        public void GetTop10()
+        {
+            throw new NotImplementedException();
+        }
 
 	
 	/**
 	 * 有一个有序的环形数列，从小到大排好了，比如：4，5，6，1，2，3，从第四个位置开始当成环形看， 就是一个有序数列1，2，3，4，5，6。问题是在这个数列中找到给定的关键字。
-	 * @author yilo
-	 *
+	 * 
 	 */
 	
 	
 	
 	/**
 	 * 有0，1，2到99这100个正整数，中间丢失了一个，剩余的99个数打乱顺序放在一个数组里， 问怎样找到丢失的那个数
-	 * @author yilo
-	 *
+	 * 
 	 */
 	
 	
 	/**
 	 * 算法题：一个股价序列，告诉每个时间点的股价，问什么时候买什么时候卖获利最大？时间复杂度O(n)
-	 * @author yilo
-	 *
+	 * 
 	 */
 	
 	/**
@@ -81,7 +85,20 @@ If 'user' exists in user_visits with two entries, increment the entry in visit_c
 Append 'URL' to the relevant entry in user_visits, removing the oldest entry if necessary.
 Sort the visit_count hashtable by value. This is your list of most popular sequences of URLs.
 	 */
-	
+
+        public void FindPopularSequenceOfURLs(IEnumerable<LogEntry> entries)
+        {
+            var user_visits = new List<Tuple<string,string>>();
+
+            var visit_count = new Dictionary<string, int>();
+        }
+
+        public class LogEntry
+        {
+            public int UserId;
+            public string Url;
+            public DateTime timeStamp;
+        }
 	
 	/**
 	 *  design a meeting scheduler, just like in the Microsoft outlook calendar or the gmail calendar.
